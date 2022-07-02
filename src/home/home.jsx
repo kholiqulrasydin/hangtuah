@@ -12,12 +12,12 @@ function NavBar(){
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
+          <li><a class="nav-link scrollto" href="#about">Guru dan Staff</a></li>
+          <li><a class="nav-link scrollto" href="#services">Prestasi Sekolah</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">PPDB</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">Perpustakaan Online</a></li>
+          {/* <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -34,7 +34,7 @@ function NavBar(){
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li> */}
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -103,7 +103,7 @@ function Testimoni(){
             <img src="assets/img/HANGTUAH 7.jpg" class="img-fluid" alt=""/>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
-            <h3>TESTIMONI ORANG TUA</h3>
+            <h3>PROFIL SEKOLAH</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -450,12 +450,12 @@ function Team(){
   <div class="container">
 
     <div class="section-title">
-      <h2>Team</h2>
+      <h2>Guru Dan Staff</h2>
       <p>Sit sint consectetur velit quos quisquam cupiditate nemo qui</p>
     </div>
 
     <div class="row">
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
         <div class="member">
           <img src="assets/img/team/team-1.jpg" alt=""/>
           <h4>Walter White</h4>
@@ -472,7 +472,7 @@ function Team(){
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
         <div class="member">
           <img src="assets/img/team/team-2.jpg" alt=""/>
           <h4>Sarah Jhinson</h4>
@@ -489,7 +489,39 @@ function Team(){
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <img src="assets/img/team/team-3.jpg" alt=""/>
+          <h4>William Anderson</h4>
+          <span>CTO</span>
+          <p>
+            Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+          </p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <img src="assets/img/team/team-3.jpg" alt=""/>
+          <h4>William Anderson</h4>
+          <span>CTO</span>
+          <p>
+            Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+          </p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
         <div class="member">
           <img src="assets/img/team/team-3.jpg" alt=""/>
           <h4>William Anderson</h4>
@@ -605,7 +637,7 @@ function Footer(){
             </p>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
@@ -680,7 +712,7 @@ function Home() {
 
       <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
         <div class="container text-center text-md-left" data-aos="fade-up">
-          <h1>Welcome to <span>Website</span></h1>
+          <h1>Selamat Datang di <span>Website</span></h1>
           <h2>SD HANG TUAH 7 SURABAYA</h2>
           <a href="#about" class="btn-get-started scrollto">Get Started</a>
         </div>
