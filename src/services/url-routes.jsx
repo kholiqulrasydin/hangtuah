@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "../App.css";
+import About from "../home/about";
 import Home from "../home/home.jsx";
 
 function UrlRoutes() {
@@ -8,6 +9,7 @@ function UrlRoutes() {
         <div className="UrlRoutes">
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
                 {/* <Route path="about" element={<About />} /> */}
             </Routes>
         </div>
