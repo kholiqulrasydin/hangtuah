@@ -7,11 +7,14 @@ function Content() {
     <section
       className="Content services section-bg"
       id="prestasi"
-      class="prestasi"
+      class="prestasi services section-bg"
       style={{ paddingTop: "150px" }}
     >
       <div className="container">
-        <h1 className="mb-4">Prestasi Sekolah</h1>
+        <div class="section-title">
+          <h2>Prestasi</h2>
+          <p>Prestasi dari SD Hangtuah 7</p>
+        </div>
         <div class="row">
           <div class="col-md-6">
             <div class="icon-box" style={{ height: "10rem" }}>

@@ -11,8 +11,10 @@ function Content() {
       style={{ paddingTop: "150px" }}
     >
       <div className="container">
-        <h1 className="mb-4">EKSTRAKURIKULER</h1>
-
+        <div class="section-title">
+          <h2>Ekstrakurikuler</h2>
+          <p>Ekstrakurikuler dari SD Hangtuah 7</p>
+        </div>
         <div className="row">
           <div className="col-md-3 mb-4">
             <div class="card" style={{ width: "16rem", height: "20rem" }}>
