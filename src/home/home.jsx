@@ -1105,7 +1105,7 @@ function Home() {
         <Sambutan />
         <Testimoni />
         <TestimoniOrtu />
-        <Portofolio />
+        {/* <Portofolio /> */}
         {/* <Team /> */}
         {/* <Extra />
         <Comment />
