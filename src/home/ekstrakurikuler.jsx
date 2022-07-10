@@ -43,8 +43,10 @@ function Content() {
               <div class="card-body">
                 <h5 class="card-title">English Conversation</h5>
                 <p class="card-text description">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  English Conversation merupakan ekstrakurikuler di SD Hangtuah
+                  7 yang bertujuan untuk melatih siswanya agar bisa berbahasa
+                  inggris dan bisa melakukan percakapan menggunakan bahasa
+                  inggris
                 </p>
               </div>
             </div>
@@ -61,8 +63,8 @@ function Content() {
               <div class="card-body">
                 <h5 class="card-title">Drumband</h5>
                 <p class="card-text description">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Drumband merupakan ekstrakurikuler yang bertujuan agar siswa
+                  siswi SD Hangtuah 7 ini bisa menyalurkan hobi musik drumband
                 </p>
               </div>
             </div>
@@ -79,8 +81,8 @@ function Content() {
               <div class="card-body">
                 <h5 class="card-title">Seni Tari</h5>
                 <p class="card-text description">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Seni Tari merupakan ekstrakurikuler untuk mewadahi siswa siswi
+                  yang berminat di seni tari
                 </p>
               </div>
             </div>
@@ -96,8 +98,9 @@ function Content() {
               <div class="card-body">
                 <h5 class="card-title">Karawitan</h5>
                 <p class="card-text description">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Karawitan merupakan ekstrakurikuler yang bertujuan agar siswa
+                  siswi di SD Hangtuah 7 ini dapat mewarisi dan melestarikan
+                  budaya jawa
                 </p>
               </div>
             </div>
@@ -113,8 +116,8 @@ function Content() {
               <div class="card-body">
                 <h5 class="card-title">Religi</h5>
                 <p class="card-text description">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Ekstrakurikuler Religi ini bertujuan sebagai wadah untuk siswa
+                  yang ingin berkegiatan di bidang keagamaan
                 </p>
               </div>
             </div>
@@ -130,8 +133,9 @@ function Content() {
               <div class="card-body">
                 <h5 class="card-title">Renang</h5>
                 <p class="card-text description">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Renang merupakan ekstrakurikuler yang bertujuan agar siswa
+                  siswi yang mempunyai bakat dibidang renang ini bisa
+                  menyalurkan bakatnya
                 </p>
               </div>
             </div>
@@ -147,8 +151,9 @@ function Content() {
               <div class="card-body">
                 <h5 class="card-title">Futsal</h5>
                 <p class="card-text description">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Futsal sendiri merupakan ekstrakurikuler yang umum,
+                  ekstrakurikuler ini bertujuan agar siswa siswi SD Hangtuah 7
+                  yang memiliki bakat dibidang olahraga futsal bisa tersalurkan
                 </p>
               </div>
             </div>
