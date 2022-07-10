@@ -11,7 +11,7 @@ function Content() {
       style={{ paddingTop: "150px" }}
     >
       <div className="container">
-        <h1 className="text-center mb-4">EKSTRAKURIKULER</h1>
+        <h1 className="mb-4">EKSTRAKURIKULER</h1>
 
         <div className="row">
           <div className="col-md-3 mb-4">

@@ -58,7 +58,7 @@ function NavBar() {
                   <a href="/sdm">SDM</a>
                 </li>
                 <li>
-                  <a href="#">Prestasi Sekolah</a>
+                  <a href="/prestasi">Prestasi Sekolah</a>
                 </li>
                 <li>
                   <a href="#">Galeri</a>
