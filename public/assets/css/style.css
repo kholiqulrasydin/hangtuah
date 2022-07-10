@@ -716,7 +716,7 @@ section {
   color: #fff;
 }
 .portfolio .portfolio-item figure .link-preview {
-  left: calc(50% - 38px);
+  left: calc(50%);
   top: calc(50% - 18px);
 }
 .portfolio .portfolio-item figure .link-details {
@@ -725,7 +725,7 @@ section {
 }
 .portfolio .portfolio-item figure:hover .link-preview {
   opacity: 1;
-  left: calc(50% - 44px);
+  left: calc(50% - 20px);
 }
 .portfolio .portfolio-item figure:hover .link-details {
   opacity: 1;

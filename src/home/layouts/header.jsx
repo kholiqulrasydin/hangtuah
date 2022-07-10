@@ -61,7 +61,7 @@ function NavBar() {
                   <a href="/prestasi">Prestasi Sekolah</a>
                 </li>
                 <li>
-                  <a href="#">Galeri</a>
+                  <a href="/galeri">Galeri</a>
                 </li>
               </ul>
             </li>

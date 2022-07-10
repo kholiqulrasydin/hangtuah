@@ -1084,8 +1084,11 @@ function Sambutan() {
 function Home() {
   return (
     <div className="Home">
-      <Header/>
-      <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+      <Header />
+      <section
+        id="hero"
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
         <div class="container text-center text-md-left" data-aos="fade-up">
           <h1>
             Selamat Datang di <span>Website</span>
@@ -1102,14 +1105,14 @@ function Home() {
         <Sambutan />
         <Testimoni />
         <TestimoniOrtu />
+        <Portofolio />
         {/* <Team /> */}
         {/* <Extra />
-        <Portofolio />
         <Comment />
         <Team />
         <Contact /> */}
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
