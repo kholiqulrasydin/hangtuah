@@ -10,14 +10,14 @@ function Footer(){
             <div class="col-lg-3 col-md-6 footer-contact">
               <h3>SD Hangtuah 7</h3>
               <p>
-                A108 Adam Street <br />
-                New York, NY 535022
+              Jl. Golf 1 Surabaya, <br />
+              Gn. Sari, Kec. Dukuhpakis,
                 <br />
-                United States <br />
+                Kota SBY, Jawa Timur 60224 <br />
                 <br />
-                <strong>Phone:</strong> +1 5589 55488 55
+                <strong>Phone:</strong> (031) 5664789
                 <br />
-                <strong>Email:</strong> info@example.com
+                <strong>Email:</strong> sdhttujuh@gmail.com
                 <br />
               </p>
             </div>
@@ -26,13 +26,13 @@ function Footer(){
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Beranda</a>
                 </li>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Perpustakaan</a>
                 </li>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Berita</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>{" "}
@@ -46,25 +46,25 @@ function Footer(){
             </div>
 
             <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
+              <h4>Informasi</h4>
               <ul>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                  <i class="bx bx-chevron-right"></i> <a href="#">PPDB</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Web Development</a>
+                  <a href="#">Ekstrakuliler</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Product Management</a>
+                  <a href="#">SDM</a>
                 </li>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Prestasi Sekolah</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>{" "}
-                  <a href="#">Graphic Design</a>
+                  <a href="#">Galeri</a>
                 </li>
               </ul>
             </div>
@@ -109,9 +109,6 @@ function Footer(){
           </a>
           <a href="#" class="google-plus">
             <i class="bx bxl-skype"></i>
-          </a>
-          <a href="#" class="linkedin">
-            <i class="bx bxl-linkedin"></i>
           </a>
         </div>
       </div>

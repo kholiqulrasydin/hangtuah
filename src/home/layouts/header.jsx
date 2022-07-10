@@ -87,9 +87,6 @@ function NavBar() {
             <a href="#" class="instagram">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="#" class="linkedin">
-              <i class="bi bi-linkedin"></i>
-            </a>
           </div>
         </div>
       </div>
