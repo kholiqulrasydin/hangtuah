@@ -10,10 +10,10 @@ function NavBar() {
       >
         <div class="container d-flex align-items-center">
           <div class="logo me-auto">
+          <a href="/"><img src="assets/img/logo.png" alt="" class="img-fluid"/></a>
             <h1>
-              <a href="index.html">SD Hangtuah 7</a>
+              <a href="/">SD Hangtuah 7</a>
             </h1>
-            {/* <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"/></a> */}
           </div>
   
           <nav id="navbar" class="navbar order-last order-lg-0">
@@ -35,7 +35,7 @@ function NavBar() {
               <ul>
                 <li><a href="#">PPDB</a></li>
                 <li><a href="#">Ekstrakulikuler</a></li>
-                <li><a href="#">SDM</a></li>
+                <li><a href="/sdm">SDM</a></li>
                 <li><a href="#">Prestasi Sekolah</a></li>
                 <li><a href="#">Galeri</a></li>
               </ul>

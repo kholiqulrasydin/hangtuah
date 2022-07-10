@@ -1085,17 +1085,14 @@ function Home() {
   return (
     <div className="Home">
       <Header/>
-      <section
-        id="hero"
-        class="d-flex flex-column justify-content-center align-items-center"
-      >
+      <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
         <div class="container text-center text-md-left" data-aos="fade-up">
           <h1>
             Selamat Datang di <span>Website</span>
           </h1>
           <h2>SD HANG TUAH 7 SURABAYA</h2>
-          <a href="#about" class="btn-get-started scrollto">
-            Get Started
+          <a href="/about" class="btn-get-started scrollto">
+            Tentang Kami
           </a>
         </div>
       </section>

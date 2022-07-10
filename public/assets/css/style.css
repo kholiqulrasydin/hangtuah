@@ -70,15 +70,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 #header .logo h1 {
   font-size: 28px;
-  margin: 0;
+  margin: 2px;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #384046;
+  display: inline-flex;
 }
 #header .logo h1 a, #header .logo h1 a:hover {
   color: #384046;
   text-decoration: none;
+  display: inline-flex;
 }
 #header .logo img {
   max-height: 40px;
@@ -375,10 +377,25 @@ section {
   background-color: #f7fbfe;
 }
 
+.title-with-search {
+  text-align: left;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+
+.title-with-search h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
 .section-title {
   text-align: center;
   padding-bottom: 30px;
 }
+
 .section-title h2 {
   font-size: 32px;
   font-weight: 600;

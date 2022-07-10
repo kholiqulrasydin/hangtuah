@@ -8,7 +8,7 @@ function Footer(){
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>Lumia</h3>
+              <h3>SD Hangtuah 7</h3>
               <p>
                 A108 Adam Street <br />
                 New York, NY 535022
@@ -69,7 +69,7 @@ function Footer(){
               </ul>
             </div>
 
-            <div class="col-lg-4 col-md-6 footer-newsletter">
+            {/* <div class="col-lg-4 col-md-6 footer-newsletter">
               <h4>Join Our Newsletter</h4>
               <p>
                 Tamen quem nulla quae legam multos aute sint culpa legam noster
@@ -79,7 +79,7 @@ function Footer(){
                 <input type="email" name="email" />
                 <input type="submit" value="Subscribe" />
               </form>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -89,12 +89,12 @@ function Footer(){
           <div class="copyright">
             &copy; Copyright{" "}
             <strong>
-              <span>Lumia</span>
+              <span>SD Hangtuah 7</span>
             </strong>
             . All Rights Reserved
           </div>
           <div class="credits">
-            Designed by <a href="https://bootstrapmade.com/">Vokasi UNESA</a>
+            Designed by <a href="/">Vokasi UNESA</a>
           </div>
         </div>
         <div class="social-links text-center text-md-right pt-3 pt-md-0">
