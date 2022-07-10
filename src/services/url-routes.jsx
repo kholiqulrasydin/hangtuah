@@ -5,6 +5,7 @@ import About from "../home/about";
 import Ekstra from "../home/ekstrakurikuler";
 import Galeri from "../home/galeri";
 import Home from "../home/home.jsx";
+import MengapaKami from "../home/mengapakami";
 import Prestasi from "../home/prestasi";
 import GuruDanStaff from "../home/sdm";
 import VisiMisi from "../home/visi-misi";
@@ -20,6 +21,7 @@ function UrlRoutes() {
         <Route path="/prestasi" element={<Prestasi />} />
         <Route path="/galeri" element={<Galeri />} />
         <Route path="/visi-dan-misi" element={<VisiMisi />} />
+        <Route path="/mengapa-kami" element={<MengapaKami />} />
       </Routes>
     </div>
   );

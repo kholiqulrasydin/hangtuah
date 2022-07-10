@@ -39,7 +39,7 @@ function NavBar() {
                   <a href="/visi-dan-misi">Visi dan Misi</a>
                 </li>
                 <li>
-                  <a href="#">Mengapa Kami</a>
+                  <a href="/mengapa-kami">Mengapa Kami</a>
                 </li>
               </ul>
             </li>
