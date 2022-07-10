@@ -11,9 +11,9 @@ function NavBar() {
         <div class="container d-flex align-items-center">
           <div class="logo me-auto">
           <a href="/"><img src="assets/img/logo.png" alt="" class="img-fluid"/></a>
-            <h1>
+            {/* <h1>
               <a href="/">SD Hangtuah 7</a>
-            </h1>
+            </h1> */}
           </div>
   
           <nav id="navbar" class="navbar order-last order-lg-0">

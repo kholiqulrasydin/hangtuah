@@ -16,27 +16,20 @@ class PeopleGrid extends Component{
     }
 
     render(){
-        return <section className="Team" id="team" class="team">
-        <div class="container">
-          <div class='section-title'>
-            <h2>Guru Dan Staff</h2>
-            <div class="row">
-            <div class="col-12">
+        return <section className="Team" id="team" class="team" style={{marginTop: '2rem'}}>
+          <div class="container-fluid col-md-6">
+            <div class="row d-flex justify-content-between">
+            <h2 class="col-sm-12 col-md-6">Guru Dan Staff</h2>
+            <div class="row col-sm-12 col-md-6">
             <div class="input-group">
                 <input class="form-control py-2" type="text" placeholder='search'/>
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">
-                    <FontAwesomeIcon icon="search" />
-                    </button>
-                </div>
             </div>
-        </div>
+            </div>
             </div>
           </div>
-  
+        <div class="container" style={{marginTop: '4rem'}}>  
           <div class="row">
                 {
-                  
                     this.data.map(item => (
                         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                         <div class="member">
