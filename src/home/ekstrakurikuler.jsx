@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "./layouts/header";
-import Footer from "./layouts/footer";
+import { LayoutScaffold } from "./layouts/layout";
 
 function Content() {
   return (
@@ -169,11 +168,9 @@ function Content() {
 function Ekstra() {
   return (
     <div className="Ekstrakurikuler">
-      <Header />
-      <main id="main">
-        <Content />
-      </main>
-      <Footer />
+      <LayoutScaffold>
+          <Content/>
+      </LayoutScaffold>
     </div>
   );
 }

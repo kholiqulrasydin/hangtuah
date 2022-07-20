@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "./layouts/header";
-import Footer from "./layouts/footer";
+import { LayoutScaffold } from "./layouts/layout";
 
 function Content() {
   return (
@@ -24,6 +23,7 @@ function Content() {
               <br />
               Telepon : 031-5664789
             </p>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Sd%20Hangtuah%207&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="#">map</a><br/><style>{".mapouter{position:relative;text-align:right;height:400px;width:600px;}"}</style><a href="https://www.embedgooglemap.net">google maps embed api</a><style>{".gmap_canvas {overflow:hidden;background:none!important;height:400px;width:600px;}"}</style></div></div>
             {/* <ul>
                         <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
                         <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
@@ -50,11 +50,9 @@ function Content() {
 function About() {
   return (
     <div className="About">
-      <Header />
-      <main id="main">
-        <Content />
-      </main>
-      <Footer />
+      <LayoutScaffold>
+        <Content/>
+      </LayoutScaffold>
     </div>
   );
 }

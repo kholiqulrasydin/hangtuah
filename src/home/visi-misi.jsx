@@ -1,6 +1,5 @@
 import React from "react";
-import Footer from "./layouts/footer";
-import Header from "./layouts/header";
+import { LayoutScaffold } from "./layouts/layout";
 
 function Content() {
   return (
@@ -55,9 +54,9 @@ function Content() {
 function VisiMisi() {
   return (
     <div className="VisiMisi">
-      <Header />
-      <Content />
-      <Footer />
+      <LayoutScaffold>
+        <Content/>
+      </LayoutScaffold>
     </div>
   );
 }

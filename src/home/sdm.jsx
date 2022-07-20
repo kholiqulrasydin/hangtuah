@@ -1,7 +1,6 @@
 import React from 'react';
-import Header from './layouts/header';
-import Footer from './layouts/footer';
 import PeopleGrid from './components/grid';
+import { LayoutScaffold } from './layouts/layout';
 
 function Content(){
     const data = [
@@ -85,13 +84,9 @@ function Content(){
 
 function GuruDanStaff(){
     return (
-        <div className="About">
-            <Header/>
-            <main id="main" style={{marginTop: '20px'}}>
-                <Content/>
-            </main>
-        <Footer/>
-        </div>
+        <LayoutScaffold marginTop='5rem'>
+            <Content/>
+        </LayoutScaffold>
     );
 }
 
