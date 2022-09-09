@@ -66,7 +66,7 @@ function NavBar() {
               </ul>
             </li>
             <li>
-              <a class="nav-link scrollto " href="#portfolio">
+              <a class="nav-link scrollto " href="/perpustakaan">
                 Perpustakaan
               </a>
             </li>
