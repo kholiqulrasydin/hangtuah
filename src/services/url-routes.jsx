@@ -2,6 +2,7 @@ import * as React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "../App.css";
 import About from "../home/about";
+import Peminjaman from "../home/components/form-peminjaman";
 import Ekstra from "../home/ekstrakurikuler";
 import Galeri from "../home/galeri";
 import Home from "../home/home.jsx";
@@ -24,6 +25,7 @@ function UrlRoutes() {
         <Route path="/visi-dan-misi" element={<VisiMisi />} />
         <Route path="/mengapa-kami" element={<MengapaKami />} />
         <Route path="/perpustakaan" element={<Perpustakaan />} />
+        <Route path="/pinjam" element={<Peminjaman />} />
       </Routes>
     </div>
   );

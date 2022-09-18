@@ -46,7 +46,7 @@ class BukuGrid extends Component {
                   <h4>{item.name}</h4>
                   <span>Penerbit : {item.penerbit}</span>
                   <div class="btn">
-                    <a class="btn btn-primary" href="#">
+                    <a class="btn btn-primary" href="/pinjam">
                       Pinjam
                     </a>
                   </div>
