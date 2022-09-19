@@ -71,7 +71,7 @@ function NavBar() {
               </a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="#testimonials">
+              <a class="nav-link scrollto" href="/berita">
                 Berita
               </a>
             </li>

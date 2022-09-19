@@ -1,5 +1,7 @@
-import React from "react-dom";
-import { LayoutScaffold } from './layouts/layout';
+import Api, { urlApi } from "../services/api";
+import { LayoutScaffold } from "./layouts/layout";
+import React, { Component } from "react";
+import axios from "axios";
 
 function WhatWeDo() {
   return (
@@ -61,168 +63,107 @@ function WhatWeDo() {
   );
 }
 
-function Testimoni() {
-  return (
-    <section
-      className="Testimoni"
-      id="testimoni"
-      class="testimoni services section-bg"
-    >
-      <div class="section-title">
-        <h2 class="text-uppercase">TESTIMONI ALUMNI</h2>
-        <p>Berikut merupakan testimoni dari para alumni</p>
-      </div>
+class Testimoni extends Component {
+  constructor(props) {
+    super(props);
 
-      <div className="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="icon-box testimoni-box">
-              <i class="bi bi-person-circle"></i>
-              <h4>
-                <a href="#">M. Adam</a>
-              </h4>
-              <p>
-                Dengan pengalaman pembelajaran di SD HANGTUAH 7 menjadi bekal
-                saya didunia luar ,dan saya berterimakasih kepada guru guru saya
-                yang telah mendidik ,mengajari saya dengan sabar begitupun teman
-                teman seangkatan saya. Saya ucapkan terimakasih untuk SD
-                HANGTUAH 7 ,semoga tambah maju tambah sukses tambah jaya
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-lg-0">
-            <div class="icon-box testimoni-box">
-              <i class="bi bi-person-circle"></i>
-              <h4>
-                <a href="#">Julion Ricky</a>
-              </h4>
-              <p>
-                Dengan membawa banyak kekurangan saya mengalami banyak perubahan
-                di SD HANGTUAH 7 karena Fasilitas Formal dan Non Formalnya,
-                menurut saya tidak hanya pengalaman pembelajaran saja yang akan
-                menjadi bekal didunia luar pasti akan sangat berguna untuk masa
-                depan kelak..Terima Kasih diucapkan untuk SMK Teuku Umar atas
-                segala hal yang telah diberikan kepada saya… Semoga SD HANGTUAH
-                7 tambah Maju dan Lebih Sukses… SD HANGTUAH 7.. Jaya..jaya…jaya…
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="icon-box testimoni-box">
-              <i class="bi bi-person-circle"></i>
-              <h4>
-                <a href="#">Sahara Ainun Nabila</a>
-              </h4>
-              <p>
-                Alhamdulillah saya sangat bersyukur dan merasa bahagia karena
-                selama bersekolah disini saya dipertemukan dengan teman-teman
-                yang baik, guru-guru yang baik, sabar dan penyayang serta banyak
-                hal yang saya dapatkan selain ilmu dan keterampilan tetapi juga
-                bekal kehidupan kedepannya yaitu akhlak dan Budi pekerti
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="icon-box testimoni-box">
-              <i class="bi bi-person-circle"></i>
-              <h4>
-                <a href="#">Vindi Sri Ratnasari</a>
-              </h4>
-              <p>
-                Dengan segala kelebihan dan kekurangan, memberikan ruang khusus
-                untuk membentuk pola pikir kreatif dalam lingkungan
-                belajarnya,berpengaruh terhadap setiap pola pikir dan karyanya
-                ,dengan semua fasilitas dan pengajar yang cukup ahli dibidangnya
-                mempunyai ilmu yang sungguh bermanfaat di masa sekarang.
-              </p>
-            </div>
+    this.state = {
+      testimoniAlumni: [],
+    };
+  }
+
+  componentDidMount() {
+    axios.get(urlApi + "/getTestiAlumni").then((res) => {
+      this.setState({
+        testimoniAlumni: res.data.values,
+      });
+    });
+  }
+
+  render() {
+    return (
+      <section
+        className="Testimoni"
+        id="testimoni"
+        class="testimoni services section-bg"
+      >
+        <div class="section-title">
+          <h2 class="text-uppercase">TESTIMONI ALUMNI</h2>
+          <p>Berikut merupakan testimoni dari para alumni</p>
+        </div>
+
+        <div className="container">
+          <div class="row">
+            {this.state.testimoniAlumni.map((testi) => (
+              <div class="col-md-6 mt-4">
+                <div class="icon-box testimoni-box">
+                  <i class="bi bi-person-circle"></i>
+                  <h4>
+                    <a href="#">{testi.name}</a>
+                  </h4>
+                  <p>{testi.testimoni}</p>
+                </div>
+              </div>
+            ))}
+            {/* <a class="btn btn-primary mt-4" href="/tambahTesti">
+              Tambahkan Testimoni Alumni
+            </a> */}
           </div>
         </div>
-      </div>
-    </section>
-  );
+      </section>
+    );
+  }
 }
 
-function TestimoniOrtu() {
-  return (
-    <section
-      className="TestimoniOrtu"
-      id="testimoniOrtu"
-      class="testimoniOrtu services section-bg"
-    >
-      <div class="section-title">
-        <h2 class="text-uppercase">TESTIMONI Orang Tua</h2>
-        <p>Berikut merupakan testimoni dari para Orang tua murid</p>
-      </div>
+class TestimoniOrtu extends Component {
+  constructor(props) {
+    super(props);
 
-      <div className="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="icon-box testimoni-box">
-              <i class="bi bi-person-circle"></i>
-              <h4>
-                <a href="#">M. Adam</a>
-              </h4>
-              <p>
-                Dengan pengalaman pembelajaran di SD HANGTUAH 7 menjadi bekal
-                saya didunia luar ,dan saya berterimakasih kepada guru guru saya
-                yang telah mendidik ,mengajari saya dengan sabar begitupun teman
-                teman seangkatan saya. Saya ucapkan terimakasih untuk SD
-                HANGTUAH 7 ,semoga tambah maju tambah sukses tambah jaya
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-lg-0">
-            <div class="icon-box testimoni-box">
-              <i class="bi bi-person-circle"></i>
-              <h4>
-                <a href="#">Julion Ricky</a>
-              </h4>
-              <p>
-                Dengan membawa banyak kekurangan saya mengalami banyak perubahan
-                di SD HANGTUAH 7 karena Fasilitas Formal dan Non Formalnya,
-                menurut saya tidak hanya pengalaman pembelajaran saja yang akan
-                menjadi bekal didunia luar pasti akan sangat berguna untuk masa
-                depan kelak..Terima Kasih diucapkan untuk SMK Teuku Umar atas
-                segala hal yang telah diberikan kepada saya… Semoga SD HANGTUAH
-                7 tambah Maju dan Lebih Sukses… SD HANGTUAH 7.. Jaya..jaya…jaya…
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="icon-box testimoni-box">
-              <i class="bi bi-person-circle"></i>
-              <h4>
-                <a href="#">Sahara Ainun Nabila</a>
-              </h4>
-              <p>
-                Alhamdulillah saya sangat bersyukur dan merasa bahagia karena
-                selama bersekolah disini saya dipertemukan dengan teman-teman
-                yang baik, guru-guru yang baik, sabar dan penyayang serta banyak
-                hal yang saya dapatkan selain ilmu dan keterampilan tetapi juga
-                bekal kehidupan kedepannya yaitu akhlak dan Budi pekerti
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="icon-box testimoni-box">
-              <i class="bi bi-person-circle"></i>
-              <h4>
-                <a href="#">Vindi Sri Ratnasari</a>
-              </h4>
-              <p>
-                Dengan segala kelebihan dan kekurangan, memberikan ruang khusus
-                untuk membentuk pola pikir kreatif dalam lingkungan
-                belajarnya,berpengaruh terhadap setiap pola pikir dan karyanya
-                ,dengan semua fasilitas dan pengajar yang cukup ahli dibidangnya
-                mempunyai ilmu yang sungguh bermanfaat di masa sekarang.
-              </p>
-            </div>
+    this.state = {
+      testimoniOrtu: [],
+    };
+  }
+
+  componentDidMount() {
+    axios.get(urlApi + "/getTestiOrtu").then((res) => {
+      this.setState({
+        testimoniOrtu: res.data.values,
+      });
+    });
+  }
+
+  render() {
+    return (
+      <section
+        className="TestimoniOrtu"
+        id="testimoniOrtu"
+        class="testimoniOrtu services section-bg"
+      >
+        <div class="section-title">
+          <h2 class="text-uppercase">TESTIMONI Orang Tua</h2>
+          <p>Berikut merupakan testimoni dari para Orang tua murid</p>
+        </div>
+        <div className="container">
+          <div class="row">
+            {this.state.testimoniOrtu.map((testi) => (
+              <div class="col-md-6 mt-4">
+                <div class="icon-box testimoni-box">
+                  <i class="bi bi-person-circle"></i>
+                  <h4>
+                    <a href="#">{testi.name}</a>
+                  </h4>
+                  <p>{testi.testimoni}</p>
+                </div>
+              </div>
+            ))}
+            {/* <a class="btn btn-primary mt-4" href="/tambahTesti">
+              Tambahkan Testimoni Orangtua
+            </a> */}
           </div>
         </div>
-      </div>
-    </section>
-  );
+      </section>
+    );
+  }
 }
 
 function Extra() {
@@ -1080,31 +1021,36 @@ function Sambutan() {
   );
 }
 
-function Home() {
-  return (
-    <div className="Home">
-      <LayoutScaffold
-        homeHeader={(
-          <section
-            id="hero"
-            class="d-flex flex-column justify-content-center align-items-center">
-            <div class="container text-center text-md-left" data-aos="fade-up">
-              <h1>
-                Selamat Datang di <span>Website</span>
-              </h1>
-              <h2>SD HANG TUAH 7 SURABAYA</h2>
-              <a href="/about" class="btn-get-started scrollto">
-                Tentang Kami
-              </a>
-            </div>
-          </section>
-        )} >
-        <Sambutan />
-        <Testimoni />
-        <TestimoniOrtu />
-      </LayoutScaffold>
-    </div>
-  );
+export default class Home extends Component {
+  render() {
+    return (
+      <div className="Home">
+        <LayoutScaffold
+          homeHeader={
+            <section
+              id="hero"
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <div
+                class="container text-center text-md-left"
+                data-aos="fade-up"
+              >
+                <h1>
+                  Selamat Datang di <span>Website</span>
+                </h1>
+                <h2>SD HANG TUAH 7 SURABAYA</h2>
+                <a href="/about" class="btn-get-started scrollto">
+                  Tentang Kami
+                </a>
+              </div>
+            </section>
+          }
+        >
+          <Sambutan />
+          <Testimoni />
+          <TestimoniOrtu />
+        </LayoutScaffold>
+      </div>
+    );
+  }
 }
-
-export default Home;
