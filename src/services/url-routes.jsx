@@ -11,6 +11,7 @@ import MengapaKami from "../home/mengapakami";
 import Perpustakaan from "../home/perpustakaan";
 import Prestasi from "../home/prestasi";
 import GuruDanStaff from "../home/sdm";
+import Sejarah from "../home/sejarah";
 import VisiMisi from "../home/visi-misi";
 
 function UrlRoutes() {
@@ -28,6 +29,7 @@ function UrlRoutes() {
         <Route path="/perpustakaan" element={<Perpustakaan />} />
         <Route path="/pinjam" element={<Peminjaman />} />
         <Route path="/berita" element={<Berita />} />
+        <Route path="/sejarah" element={<Sejarah />} />
       </Routes>
     </div>
   );

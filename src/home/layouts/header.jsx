@@ -1,4 +1,5 @@
 import React from "react";
+import { urlFb, urlInstagram } from "../../services/api";
 
 function NavBar() {
   return (
@@ -33,7 +34,7 @@ function NavBar() {
                   <a href="/about">Tentang Kami</a>
                 </li>
                 <li>
-                  <a href="#">Sejarah</a>
+                  <a href="/sejarah">Sejarah</a>
                 </li>
                 <li>
                   <a href="/visi-dan-misi">Visi dan Misi</a>
@@ -76,7 +77,7 @@ function NavBar() {
               </a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="#testimonials">
+              <a class="nav-link scrollto" href="#footer">
                 kontak
               </a>
             </li>
@@ -103,13 +104,10 @@ function NavBar() {
         </nav>
 
         <div class="header-social-links d-flex align-items-center">
-          <a href="#" class="twitter">
-            <i class="bi bi-twitter"></i>
-          </a>
-          <a href="#" class="facebook">
+          <a href={urlFb} class="facebook">
             <i class="bi bi-facebook"></i>
           </a>
-          <a href="#" class="instagram">
+          <a href={urlInstagram} class="instagram">
             <i class="bi bi-instagram"></i>
           </a>
         </div>
