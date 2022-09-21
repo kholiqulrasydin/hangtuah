@@ -44,7 +44,7 @@ function Footer() {
                 <h4>Informasi</h4>
                 <ul>
                   <li>
-                    <i class="bx bx-chevron-right"></i> <a href="#">PPDB</a>
+                    <i class="bx bx-chevron-right"></i> <a href="/ppdb">PPDB</a>
                   </li>
                   <li>
                     <i class="bx bx-chevron-right"></i>{" "}

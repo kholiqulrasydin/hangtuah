@@ -50,7 +50,7 @@ function NavBar() {
               </a>
               <ul>
                 <li>
-                  <a href="#">PPDB</a>
+                  <a href="/ppdb">PPDB</a>
                 </li>
                 <li>
                   <a href="/ekstrakurikuler">Ekstrakulikuler</a>
