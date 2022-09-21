@@ -1,6 +1,6 @@
 import Api, { urlApi } from "../services/api";
 import { LayoutScaffold } from "./layouts/layout";
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import axios from "axios";
 
 function WhatWeDo() {
@@ -1021,6 +1021,85 @@ function Sambutan() {
   );
 }
 
+function TambahkanTesti() {
+  const [nama, setNama] = useState("");
+  const [testi, setTesti] = useState("");
+  const [type, setType] = useState("");
+
+  const postTesti = (e) => {
+    e.preventDefault();
+    axios
+      .post(urlApi + "/insertTesti", {
+        nama,
+        testi,
+        type,
+      })
+      .then((res) => console.log("Berhasil", res))
+      .catch((err) => console.log(err));
+  };
+
+  return (
+    <section
+      className="tambahTesti"
+      id="tambahTesti"
+      class="tambahTesti services section-bg"
+    >
+      <div className="container">
+        <div class="section-title">
+          <h2 class="text-uppercase">Tambahkan Testimoni</h2>
+        </div>
+        <form>
+          <div className="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">
+              Tambahkan Testimoni Sebagai
+            </label>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              value={type}
+              onChange={(e) => setType(e.target.value)}
+            >
+              <option value="1" selected>
+                Orang tua
+              </option>
+              <option value="2">Alumni</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">
+              Nama Lengkap
+            </label>
+            <input
+              type="text"
+              value={nama}
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Nama Lengkap"
+              onChange={(e) => setNama(e.target.value)}
+            ></input>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">
+              Testimoni
+            </label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              value={testi}
+              onChange={(e) => setTesti(e.target.value)}
+            ></textarea>
+          </div>
+          <div className="mb-3">
+            <button type="button" class="btn btn-primary" onClick={postTesti}>
+              Tambahkan
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  );
+}
 export default class Home extends Component {
   render() {
     return (
@@ -1049,6 +1128,7 @@ export default class Home extends Component {
           <Sambutan />
           <Testimoni />
           <TestimoniOrtu />
+          <TambahkanTesti />
         </LayoutScaffold>
       </div>
     );
