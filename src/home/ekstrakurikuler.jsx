@@ -12,7 +12,7 @@ function Content() {
       <div className="container">
         <div class="section-title">
           <h2>Ekstrakurikuler</h2>
-          <p>Ekstrakurikuler dari SD Hangtuah 7</p>
+          <p>Ekstrakurikuler dari SD Hang Tuah 7 Surabaya</p>
         </div>
         <div className="row">
           <div className="col-md-3 mb-4">
@@ -44,10 +44,10 @@ function Content() {
               <div class="card-body">
                 <h5 class="card-title">English Conversation</h5>
                 <p class="card-text description">
-                  English Conversation merupakan ekstrakurikuler di SD Hangtuah
-                  7 yang bertujuan untuk melatih siswanya agar bisa berbahasa
-                  inggris dan bisa melakukan percakapan menggunakan bahasa
-                  inggris
+                  English Conversation merupakan ekstrakurikuler di SD Hang Tuah
+                  7 Surabaya yang bertujuan untuk melatih siswanya agar bisa
+                  berbahasa inggris dan bisa melakukan percakapan menggunakan
+                  bahasa inggris
                 </p>
               </div>
             </div>
@@ -65,7 +65,8 @@ function Content() {
                 <h5 class="card-title">Drumband</h5>
                 <p class="card-text description">
                   Drumband merupakan ekstrakurikuler yang bertujuan agar siswa
-                  siswi SD Hangtuah 7 ini bisa menyalurkan hobi musik drumband
+                  siswi SD Hang Tuah 7 Surabaya ini bisa menyalurkan hobi musik
+                  drumband
                 </p>
               </div>
             </div>
@@ -100,8 +101,8 @@ function Content() {
                 <h5 class="card-title">Karawitan</h5>
                 <p class="card-text description">
                   Karawitan merupakan ekstrakurikuler yang bertujuan agar siswa
-                  siswi di SD Hangtuah 7 ini dapat mewarisi dan melestarikan
-                  budaya jawa
+                  siswi di SD Hang Tuah 7 Surabaya ini dapat mewarisi dan
+                  melestarikan budaya jawa
                 </p>
               </div>
             </div>
@@ -153,8 +154,9 @@ function Content() {
                 <h5 class="card-title">Futsal</h5>
                 <p class="card-text description">
                   Futsal sendiri merupakan ekstrakurikuler yang umum,
-                  ekstrakurikuler ini bertujuan agar siswa siswi SD Hangtuah 7
-                  yang memiliki bakat dibidang olahraga futsal bisa tersalurkan
+                  ekstrakurikuler ini bertujuan agar siswa siswi SD Hang Tuah 7
+                  Surabaya yang memiliki bakat dibidang olahraga futsal bisa
+                  tersalurkan
                 </p>
               </div>
             </div>
@@ -169,7 +171,7 @@ function Ekstra() {
   return (
     <div className="Ekstrakurikuler">
       <LayoutScaffold>
-          <Content/>
+        <Content />
       </LayoutScaffold>
     </div>
   );

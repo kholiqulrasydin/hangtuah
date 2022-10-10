@@ -1128,7 +1128,6 @@ export default class Home extends Component {
           <Sambutan />
           <Testimoni />
           <TestimoniOrtu />
-          <TambahkanTesti />
         </LayoutScaffold>
       </div>
     );

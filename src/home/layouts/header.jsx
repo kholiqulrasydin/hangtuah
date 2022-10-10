@@ -1,5 +1,5 @@
 import React from "react";
-import { urlFb, urlInstagram } from "../../services/api";
+import { urlFb, urlInstagram, urlYoutube } from "../../services/api";
 
 function NavBar() {
   return (
@@ -53,7 +53,7 @@ function NavBar() {
                   <a href="/ppdb">PPDB</a>
                 </li>
                 <li>
-                  <a href="/ekstrakurikuler">Ekstrakulikuler</a>
+                  <a href="/ekstrakurikuler">Ekstrakurikuler</a>
                 </li>
                 <li>
                   <a href="/sdm">SDM</a>
@@ -78,7 +78,7 @@ function NavBar() {
             </li>
             <li>
               <a class="nav-link scrollto" href="#footer">
-                kontak
+                Kontak
               </a>
             </li>
             {/* <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -109,6 +109,9 @@ function NavBar() {
           </a>
           <a href={urlInstagram} class="instagram">
             <i class="bi bi-instagram"></i>
+          </a>
+          <a href={urlYoutube} class="youtube">
+            <i class="bi bi-youtube"></i>
           </a>
         </div>
       </div>

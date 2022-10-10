@@ -1,4 +1,5 @@
 import React from "react";
+import { urlPerpustakaan } from "../services/api";
 import BukuGrid from "./components/bukugrid";
 import { LayoutScaffold } from "./layouts/layout";
 
@@ -57,7 +58,14 @@ function Perpustakaan() {
           </section>
         }
       >
-        <Content />
+        {/* <Content /> */}
+        <div className="container mt-4">
+          <div className="row text-center">
+            <a href={urlPerpustakaan} className="btn btn-primary">
+              Klik Untuk Meminjam Buku
+            </a>
+          </div>
+        </div>
       </LayoutScaffold>
     </div>
   );

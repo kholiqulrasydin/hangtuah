@@ -14,7 +14,7 @@ function Content() {
       <div className="container">
         <div class="section-title">
           <h2>Prestasi</h2>
-          <p>Prestasi dari SD Hangtuah 7</p>
+          <p>Prestasi dari SD Hang Tuah 7 Surabaya</p>
         </div>
         <div class="row">
           <div class="col-md-6">
@@ -23,7 +23,9 @@ function Content() {
               <h4>
                 <a href="#">Juara I Futsal Surabaya</a>
               </h4>
-              <p>Prestasi ini didapatkan oleh tim futsal SD Hangtuah 7</p>
+              <p>
+                Prestasi ini didapatkan oleh tim futsal SD Hang Tuah 7 Surabaya
+              </p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-lg-0">
@@ -42,8 +44,8 @@ function Content() {
                 <a href="#">Juara II Lomba Pramuka Tingkat Kota</a>
               </h4>
               <p>
-                Prestasi ini didapatkan oleh perwakilan Tim pramuka SD Hangtuah
-                7
+                Prestasi ini didapatkan oleh perwakilan Tim pramuka SD Hang Tuah
+                7 Surabaya
               </p>
             </div>
           </div>
@@ -54,8 +56,8 @@ function Content() {
                 <a href="#">Juara II Futsal Nasional</a>
               </h4>
               <p>
-                Tim Futsal SD Hangtuah 7 mendapatkan juara II Futsal Tingkat
-                nasional yang diselenggarakan di Surabaya
+                Tim Futsal SD Hang Tuah 7 Surabaya mendapatkan juara II Futsal
+                Tingkat nasional yang diselenggarakan di Surabaya
               </p>
             </div>
           </div>
@@ -69,7 +71,7 @@ function Prestasi() {
   return (
     <div className="Prestasi">
       <LayoutScaffold>
-        <Content/>
+        <Content />
       </LayoutScaffold>
     </div>
   );

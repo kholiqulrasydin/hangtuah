@@ -1,5 +1,5 @@
 import React from "react";
-import { urlFb, urlInstagram } from "../../services/api";
+import { urlFb, urlInstagram, urlYoutube } from "../../services/api";
 
 function Footer() {
   return (
@@ -9,7 +9,7 @@ function Footer() {
           <div class="container">
             <div class="row">
               <div class="col-lg-3 col-md-6 footer-contact">
-                <h3>SD Hangtuah 7</h3>
+                <h3>SD Hang Tuah 7 Surabaya</h3>
                 <p>
                   Jl. Golf 1 Surabaya, <br />
                   Gn. Sari, Kec. Dukuhpakis,
@@ -72,7 +72,7 @@ function Footer() {
             <div class="copyright">
               &copy; Copyright{" "}
               <strong>
-                <span>SD Hangtuah 7</span>
+                <span>SD Hang Tuah 7 Surabaya</span>
               </strong>
               . All Rights Reserved
             </div>
@@ -86,6 +86,9 @@ function Footer() {
             </a>
             <a href={urlInstagram} class="instagram">
               <i class="bx bxl-instagram"></i>
+            </a>
+            <a href={urlYoutube} class="youtube">
+              <i class="bx bxl-youtube"></i>
             </a>
           </div>
         </div>

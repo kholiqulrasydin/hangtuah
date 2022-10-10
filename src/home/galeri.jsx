@@ -49,12 +49,13 @@ function Content() {
             <div class="portfolio-wrap">
               <figure>
                 <img
-                  src="assets/img/hangtuah-latar.jpg"
+                  style={{ minHeight: "100%" }}
+                  src="assets/img/gallery2.jpeg"
                   class="img-fluid"
                   alt=""
                 />
                 <a
-                  href="assets/img/hangtuah-latar.jpg"
+                  href="assets/img/gallery2.jpeg"
                   class="link-preview portfolio-lightbox"
                   data-gallery="portfolioGallery"
                   title
@@ -66,68 +67,9 @@ function Content() {
 
               <div class="portfolio-info">
                 <h4>
-                  <a href="#">Foto Sekolah</a>
+                  <a href="#">Foto Open House T.P 2021-2022</a>
                 </h4>
-                <p>Foto Sekolah</p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp"
-            data-wow-delay="0.2s"
-          >
-            <div class="portfolio-wrap">
-              <figure>
-                <img
-                  src="assets/img/hangtuah-latar.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <a
-                  href="assets/img/hangtuah-latar.jpg"
-                  class="link-preview portfolio-lightbox"
-                  data-gallery="portfolioGallery"
-                  title
-                  text-center="Preview"
-                >
-                  <i class="bx bx-zoom-in"></i>
-                </a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4>
-                  <a href="#">Foto Sekolah</a>
-                </h4>
-                <p>Foto Sekolah</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img
-                  src="assets/img/hangtuah-latar.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <a
-                  href="assets/img/hangtuah-latar.jpg"
-                  class="link-preview portfolio-lightbox"
-                  data-gallery="portfolioGallery"
-                  title
-                  text-center="Preview"
-                >
-                  <i class="bx bx-zoom-in"></i>
-                </a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4>
-                  <a href="#">Foto Sekolah</a>
-                </h4>
-                <p>Card</p>
+                <p>Foto Guru SD Hang Tuah 7</p>
               </div>
             </div>
           </div>
@@ -139,12 +81,13 @@ function Content() {
             <div class="portfolio-wrap">
               <figure>
                 <img
-                  src="assets/img/hangtuah-latar.jpg"
+                  style={{ minHeight: "100%" }}
+                  src="assets/img/gallery3.jpg"
                   class="img-fluid"
                   alt=""
                 />
                 <a
-                  href="assets/img/hangtuah-latar.jpg"
+                  href="assets/img/gallery3.jpg"
                   class="link-preview portfolio-lightbox"
                   data-gallery="portfolioGallery"
                   title
@@ -156,85 +99,26 @@ function Content() {
 
               <div class="portfolio-info">
                 <h4>
-                  <a href="#">Foto Sekolah</a>
+                  <a href="#">Foto Rapat Kerja</a>
                 </h4>
-                <p>Web</p>
+                <p>Foto Guru dan Pegawai SD Hang Tuah 7</p>
               </div>
             </div>
           </div>
-
           <div
-            class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp"
-            data-wow-delay="0.2s"
-          >
-            <div class="portfolio-wrap">
-              <figure>
-                <img
-                  src="assets/img/hangtuah-latar.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <a
-                  href="assets/img/hangtuah-latar.jpg"
-                  class="link-preview portfolio-lightbox"
-                  data-gallery="portfolioGallery"
-                  title
-                  text-center="Preview"
-                >
-                  <i class="bx bx-zoom-in"></i>
-                </a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4>
-                  <a href="#">Foto Sekolah</a>
-                </h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img
-                  src="assets/img/hangtuah-latar.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <a
-                  href="assets/img/hangtuah-latar.jpg"
-                  class="link-preview portfolio-lightbox"
-                  data-gallery="portfolioGallery"
-                  title
-                  text-center="Preview"
-                >
-                  <i class="bx bx-zoom-in"></i>
-                </a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4>
-                  <a href="#">Foto Sekolah</a>
-                </h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp"
+            class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp"
             data-wow-delay="0.1s"
           >
             <div class="portfolio-wrap">
               <figure>
                 <img
-                  src="assets/img/hangtuah-latar.jpg"
+                  style={{ minHeight: "100%" }}
+                  src="assets/img/gallery4.jpg"
                   class="img-fluid"
                   alt=""
                 />
                 <a
-                  href="assets/img/hangtuah-latar.jpg"
+                  href="assets/img/gallery4.jpg"
                   class="link-preview portfolio-lightbox"
                   data-gallery="portfolioGallery"
                   title
@@ -246,26 +130,26 @@ function Content() {
 
               <div class="portfolio-info">
                 <h4>
-                  <a href="#">Foto Sekolah</a>
+                  <a href="#">Foto Rapat Kerja</a>
                 </h4>
-                <p>Card</p>
+                <p>Foto Kegiatan Raker SD Hang Tuah 7</p>
               </div>
             </div>
           </div>
-
           <div
             class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp"
-            data-wow-delay="0.2s"
+            data-wow-delay="0.1s"
           >
             <div class="portfolio-wrap">
               <figure>
                 <img
-                  src="assets/img/hangtuah-latar.jpg"
+                  style={{ minHeight: "100%" }}
+                  src="assets/img/gallery5.jpg"
                   class="img-fluid"
                   alt=""
                 />
                 <a
-                  href="assets/img/hangtuah-latar.jpg"
+                  href="assets/img/gallery5.jpg"
                   class="link-preview portfolio-lightbox"
                   data-gallery="portfolioGallery"
                   title
@@ -277,9 +161,133 @@ function Content() {
 
               <div class="portfolio-info">
                 <h4>
-                  <a href="#">Foto Sekolah</a>
+                  <a href="#">Foto Rapat Kerja</a>
                 </h4>
-                <p>Web</p>
+                <p>Foto Guru dan Pegawai SD Hang Tuah 7</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="portfolio-wrap">
+              <figure>
+                <img
+                  style={{ minHeight: "100%" }}
+                  src="assets/img/gallery6.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <a
+                  href="assets/img/gallery6.jpg"
+                  class="link-preview portfolio-lightbox"
+                  data-gallery="portfolioGallery"
+                  title
+                  text-center="Preview"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4>
+                  <a href="#">Foto Rapat Kerja</a>
+                </h4>
+                <p>Foto Kegiatan Raker Guru SD Hang Tuah 7</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="portfolio-wrap">
+              <figure>
+                <img
+                  style={{ minHeight: "100%" }}
+                  src="assets/img/gallery7.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <a
+                  href="assets/img/gallery7.jpeg"
+                  class="link-preview portfolio-lightbox"
+                  data-gallery="portfolioGallery"
+                  title
+                  text-center="Preview"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4>
+                  <a href="#">Foto Open House T.P 2021-2022</a>
+                </h4>
+                <p>Foto Guru dan Siswa SD Hang Tuah 7</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="portfolio-wrap">
+              <figure>
+                <img
+                  style={{ minHeight: "100%" }}
+                  src="assets/img/gallery8.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <a
+                  href="assets/img/gallery8.jpeg"
+                  class="link-preview portfolio-lightbox"
+                  data-gallery="portfolioGallery"
+                  title
+                  text-center="Preview"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4>
+                  <a href="#">Foto Pegawai</a>
+                </h4>
+                <p>Foto Guru & Pegawai SD Hang Tuah 7</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="portfolio-wrap">
+              <figure>
+                <img
+                  style={{ minHeight: "100%" }}
+                  src="assets/img/gallery9.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <a
+                  href="assets/img/gallery9.jpeg"
+                  class="link-preview portfolio-lightbox"
+                  data-gallery="portfolioGallery"
+                  title
+                  text-center="Preview"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4>
+                  <a href="#">Foto Pegawai</a>
+                </h4>
+                <p>Foto Guru & Pegawai SD Hang Tuah 7</p>
               </div>
             </div>
           </div>
@@ -293,7 +301,7 @@ function Galeri() {
   return (
     <div className="Prestasi">
       <LayoutScaffold>
-        <Content/>
+        <Content />
       </LayoutScaffold>
     </div>
   );

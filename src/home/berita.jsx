@@ -32,7 +32,7 @@ export default class Berita extends Component {
             <div className="container">
               <div class="section-title">
                 <h2>Berita</h2>
-                <p>Berita terbaru dari SD Hangtuah 7</p>
+                <p>Berita terbaru dari SD Hang Tuah 7 Surabaya</p>
               </div>
               {this.state.berita.map((berita) => (
                 <div className="col-md mb-4">
