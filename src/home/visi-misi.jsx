@@ -4,13 +4,12 @@ import { LayoutScaffold } from "./layouts/layout";
 function Content() {
   return (
     <section
-      className="Content"
+      className="Content visimisi"
       id="visimisi"
-      class="visimisi"
       style={{ paddingTop: "150px" }}
     >
       <div className="container">
-        <div class="section-title">
+        <div className="section-title">
           <h2>Visi dan Misi</h2>
         </div>
 
@@ -55,7 +54,7 @@ function VisiMisi() {
   return (
     <div className="VisiMisi">
       <LayoutScaffold>
-        <Content/>
+        <Content />
       </LayoutScaffold>
     </div>
   );

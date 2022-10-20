@@ -1,16 +1,15 @@
 import React from "react";
-import { LayoutScaffold } from './layouts/layout';
+import { LayoutScaffold } from "./layouts/layout";
 
 function Content() {
   return (
     <section
-      className="Content"
+      className="Content mengapakami"
       id="mengapakami"
-      class="mengapakami"
       style={{ paddingTop: "150px" }}
     >
       <div className="container">
-        <div class="section-title">
+        <div className="section-title">
           <h2>Mengapa Kami</h2>
         </div>
 
@@ -55,7 +54,7 @@ function MengapaKami() {
   return (
     <div className="MengapaKami">
       <LayoutScaffold>
-        <Content/>
+        <Content />
       </LayoutScaffold>
     </div>
   );

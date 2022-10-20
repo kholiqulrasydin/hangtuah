@@ -6,13 +6,12 @@ export default class Sejarah extends Component {
     return (
       <LayoutScaffold>
         <section
-          className="Content"
+          className="Content mengapakami"
           id="mengapakami"
-          class="mengapakami"
           style={{ paddingTop: "150px" }}
         >
           <div className="container">
-            <div class="section-title">
+            <div className="section-title">
               <h2>
                 Sejarah Singkat Yayasan Hang Tuah Jalasenatri Cabang Surabaya
               </h2>

@@ -1,18 +1,29 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import axios from "axios";
+import { urlApi, urlMedia } from "../../services/api";
 
 class PeopleGrid extends Component {
   constructor(props) {
     super(props);
-    this.data = this.props.data;
+
     this.state = {
       searchStr: "",
+      sdm: [],
     };
     this.onSearch = this.onSearch.bind(this);
   }
 
   onSearch(onChanged) {
     this.state({ searchStr: onChanged });
+  }
+
+  componentDidMount() {
+    axios.get(urlApi + "/pegawai").then((res) => {
+      this.setState({
+        sdm: res.data.data,
+      });
+    });
   }
 
   render() {
@@ -39,16 +50,20 @@ class PeopleGrid extends Component {
         </div>
         <div class="container" style={{ marginTop: "4rem" }}>
           <div class="row">
-            {this.data.map((item) => (
+            {this.state.sdm.map((item) => (
               <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div class="member" style={{ width: "300px", height: "250px" }}>
                   <img
-                    src={item.imgUrl}
-                    style={{ width: "8rem", height: "8rem" }}
+                    src={urlMedia + "/pegawai/" + item.imgPath}
+                    style={{
+                      objectFit: "cover",
+                      width: "8rem",
+                      height: "8rem",
+                    }}
                     alt=""
                   />
                   <h4>{item.name}</h4>
-                  <span>{item.title}</span>
+                  <span>{item.position}</span>
                 </div>
               </div>
             ))}

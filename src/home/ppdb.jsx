@@ -7,13 +7,12 @@ export default class Ppdb extends Component {
     return (
       <LayoutScaffold>
         <section
-          className="Content"
+          className="Content ppdb"
           id="ppdb"
-          class="ppdb"
           style={{ paddingTop: "150px" }}
         >
           <div className="container">
-            <div class="section-title">
+            <div className="section-title">
               <h2>PPDB</h2>
               <p>Penerimaan Peserta Didik Baru SD Hang Tuah 7 Surabaya</p>
             </div>

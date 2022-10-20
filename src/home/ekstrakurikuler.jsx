@@ -1,170 +1,68 @@
-import React from "react";
+import axios from "axios";
+import React, { Component } from "react";
+import { urlApi, urlMedia } from "../services/api";
 import { LayoutScaffold } from "./layouts/layout";
 
-function Content() {
-  return (
-    <section
-      className="Content"
-      id="ekstra"
-      class="ekstra"
-      style={{ paddingTop: "150px" }}
-    >
-      <div className="container">
-        <div class="section-title">
-          <h2>Ekstrakurikuler</h2>
-          <p>Ekstrakurikuler dari SD Hang Tuah 7 Surabaya</p>
-        </div>
-        <div className="row">
-          <div className="col-md-3 mb-4">
-            <div class="card" style={{ width: "16rem", height: "20rem" }}>
-              <img
-                src="assets/img/pramuka.png"
-                class="card-img-top"
-                alt="..."
-                style={{ height: "8rem" }}
-              ></img>
-              <div class="card-body">
-                <h5 class="card-title">Pramuka</h5>
-                <p class="card-text description">
-                  Pramuka adalah sebuah organisasi yang merupakan wadah proses
-                  pendidikan kepramukaan yang dilaksanakan di Indonesia.
-                </p>
-              </div>
-            </div>
-          </div>
+class Content extends Component {
+  constructor(props) {
+    super(props);
 
-          <div className="col-md-3 mb-4">
-            <div class="card" style={{ width: "16rem", height: "20rem" }}>
-              <img
-                src="assets/img/englishtalks.jpg"
-                class="card-img-top"
-                alt="..."
-                style={{ height: "8rem" }}
-              ></img>
-              <div class="card-body">
-                <h5 class="card-title">English Conversation</h5>
-                <p class="card-text description">
-                  English Conversation merupakan ekstrakurikuler di SD Hang Tuah
-                  7 Surabaya yang bertujuan untuk melatih siswanya agar bisa
-                  berbahasa inggris dan bisa melakukan percakapan menggunakan
-                  bahasa inggris
-                </p>
-              </div>
-            </div>
-          </div>
+    this.state = {
+      ekstrakurikuler: [],
+    };
+  }
 
-          <div className="col-md-3 mb-4">
-            <div class="card" style={{ width: "16rem", height: "20rem" }}>
-              <img
-                src="assets/img/drumband.jpg"
-                class="card-img-top"
-                alt="..."
-                style={{ height: "8rem" }}
-              ></img>
-              <div class="card-body">
-                <h5 class="card-title">Drumband</h5>
-                <p class="card-text description">
-                  Drumband merupakan ekstrakurikuler yang bertujuan agar siswa
-                  siswi SD Hang Tuah 7 Surabaya ini bisa menyalurkan hobi musik
-                  drumband
-                </p>
-              </div>
-            </div>
-          </div>
+  componentDidMount() {
+    axios.get(urlApi + "/ekstrakurikuler").then((res) => {
+      this.setState({
+        ekstrakurikuler: res.data.data,
+      });
+    });
+  }
 
-          <div className="col-md-3 mb-4">
-            <div class="card" style={{ width: "16rem", height: "20rem" }}>
-              <img
-                src="assets/img/senitari.jpeg"
-                class="card-img-top"
-                alt="..."
-                style={{ height: "8rem" }}
-              ></img>
-              <div class="card-body">
-                <h5 class="card-title">Seni Tari</h5>
-                <p class="card-text description">
-                  Seni Tari merupakan ekstrakurikuler untuk mewadahi siswa siswi
-                  yang berminat di seni tari
-                </p>
-              </div>
-            </div>
+  render() {
+    return (
+      <section
+        className="Content ekstra"
+        id="ekstra"
+        style={{ paddingTop: "150px" }}
+      >
+        <div className="container">
+          <div className="section-title">
+            <h2>Ekstrakurikuler</h2>
+            <p>Ekstrakurikuler dari SD Hang Tuah 7 Surabaya</p>
           </div>
-          <div className="col-md-3 mb-4">
-            <div class="card" style={{ width: "16rem", height: "20rem" }}>
-              <img
-                src="assets/img/karawitan.jpg"
-                class="card-img-top"
-                alt="..."
-                style={{ height: "8rem" }}
-              ></img>
-              <div class="card-body">
-                <h5 class="card-title">Karawitan</h5>
-                <p class="card-text description">
-                  Karawitan merupakan ekstrakurikuler yang bertujuan agar siswa
-                  siswi di SD Hang Tuah 7 Surabaya ini dapat mewarisi dan
-                  melestarikan budaya jawa
-                </p>
+          <div className="row">
+            {this.state.ekstrakurikuler.map((ekstrakurikuler) => (
+              <div className="col-md-3 mb-4">
+                <div
+                  className="card"
+                  style={{ width: "16rem", height: "20rem" }}
+                >
+                  <img
+                    src={
+                      urlMedia + "/ekstrakurikuler/" + ekstrakurikuler.imgPath
+                    }
+                    className="card-img-top"
+                    alt="..."
+                    style={{ height: "8rem" }}
+                  ></img>
+                  <div className="card-body">
+                    <h5 className="card-title">
+                      {ekstrakurikuler.ekstrakurikuler_name}
+                    </h5>
+                    <p className="card-text description">
+                      {ekstrakurikuler.description}
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="col-md-3 mb-4">
-            <div class="card" style={{ width: "16rem", height: "20rem" }}>
-              <img
-                src="assets/img/religi.jpg"
-                class="card-img-top"
-                alt="..."
-                style={{ height: "8rem" }}
-              ></img>
-              <div class="card-body">
-                <h5 class="card-title">Religi</h5>
-                <p class="card-text description">
-                  Ekstrakurikuler Religi ini bertujuan sebagai wadah untuk siswa
-                  yang ingin berkegiatan di bidang keagamaan
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 mb-4">
-            <div class="card" style={{ width: "16rem", height: "20rem" }}>
-              <img
-                src="assets/img/renang.jpeg"
-                class="card-img-top"
-                alt="..."
-                style={{ height: "8rem" }}
-              ></img>
-              <div class="card-body">
-                <h5 class="card-title">Renang</h5>
-                <p class="card-text description">
-                  Renang merupakan ekstrakurikuler yang bertujuan agar siswa
-                  siswi yang mempunyai bakat dibidang renang ini bisa
-                  menyalurkan bakatnya
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 mb-4">
-            <div class="card" style={{ width: "16rem", height: "20rem" }}>
-              <img
-                src="assets/img/futsal.jpeg"
-                class="card-img-top"
-                alt="..."
-                style={{ height: "8rem" }}
-              ></img>
-              <div class="card-body">
-                <h5 class="card-title">Futsal</h5>
-                <p class="card-text description">
-                  Futsal sendiri merupakan ekstrakurikuler yang umum,
-                  ekstrakurikuler ini bertujuan agar siswa siswi SD Hang Tuah 7
-                  Surabaya yang memiliki bakat dibidang olahraga futsal bisa
-                  tersalurkan
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      </div>
-    </section>
-  );
+      </section>
+    );
+  }
 }
 
 function Ekstra() {

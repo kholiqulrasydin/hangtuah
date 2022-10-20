@@ -4,6 +4,7 @@ import "../App.css";
 import About from "../home/about";
 import Berita from "../home/berita";
 import Peminjaman from "../home/components/form-peminjaman";
+import DetailBerita from "../home/detail-berita";
 import Ekstra from "../home/ekstrakurikuler";
 import Galeri from "../home/galeri";
 import Home from "../home/home.jsx";
@@ -30,6 +31,7 @@ function UrlRoutes() {
         <Route path="/perpustakaan" element={<Perpustakaan />} />
         <Route path="/pinjam" element={<Peminjaman />} />
         <Route path="/berita" element={<Berita />} />
+        <Route path="/berita/:title" element={<DetailBerita />} />
         <Route path="/sejarah" element={<Sejarah />} />
         <Route path="/ppdb" element={<Ppdb />} />
       </Routes>

@@ -113,13 +113,12 @@ class GuruStaff extends Component {
   render() {
     return (
       <section
-        className="Content"
+        className="Content gurustaff"
         id="gurustaff"
-        class="gurustaff"
         style={{ paddingTop: "150px" }}
       >
         <div className="container">
-          <div class="section-title">
+          <div className="section-title">
             <h2>Guru dan Staff</h2>
             <p>Guru dan Staff SD Hang Tuah 7 Surabaya</p>
           </div>
@@ -148,8 +147,7 @@ class GuruStaff extends Component {
 function GuruDanStaff() {
   return (
     <LayoutScaffold>
-      {/* <Content /> */}
-      <GuruStaff />
+      <PeopleGrid />
     </LayoutScaffold>
   );
 }

@@ -1,33 +1,37 @@
 import React from "react";
 import { urlFb, urlInstagram, urlYoutube } from "../../services/api";
+import "../../assets/vendor/swiper/swiper-bundle.min.css";
+import "../../assets/vendor/bootstrap/css/bootstrap.min.css";
+import "../../assets/vendor/bootstrap-icons/bootstrap-icons.css";
+import "../../assets/vendor/boxicons/css/boxicons.min.css";
+import "../../assets/vendor/glightbox/css/glightbox.min.css";
+import "../../assets/css/style.css";
+import "../../assets/css/home.css";
+import logo from "../../assets/img/logo.png";
 
 function NavBar() {
   return (
-    <div
-      className="NavBar"
-      id="header"
-      class="fixed-top d-flex align-items-center"
-    >
-      <div class="container d-flex align-items-center">
-        <div class="logo me-auto">
+    <div className="NavBar fixed-top d-flex align-items-center" id="header">
+      <div className="container d-flex align-items-center">
+        <div className="logo me-auto">
           <a href="/">
-            <img src="assets/img/logo.png" alt="" class="img-fluid" />
+            <img src={logo} alt="" className="img-fluid" />
           </a>
           {/* <h1>
               <a href="/">SD Hangtuah 7</a>
             </h1> */}
         </div>
 
-        <nav id="navbar" class="navbar order-last order-lg-0">
+        <nav id="navbar" className="navbar order-last order-lg-0">
           <ul>
             <li>
-              <a class="nav-link scrollto" href="/">
+              <a className="nav-link scrollto" href="/">
                 Beranda
               </a>
             </li>
-            <li class="dropdown">
+            <li className="dropdown">
               <a href="#">
-                <span>Profil</span> <i class="bi bi-chevron-down"></i>
+                <span>Profil</span> <i className="bi bi-chevron-down"></i>
               </a>
               <ul>
                 <li>
@@ -44,9 +48,9 @@ function NavBar() {
                 </li>
               </ul>
             </li>
-            <li class="dropdown">
+            <li className="dropdown">
               <a href="#">
-                <span>Informasi</span> <i class="bi bi-chevron-down"></i>
+                <span>Informasi</span> <i className="bi bi-chevron-down"></i>
               </a>
               <ul>
                 <li>
@@ -67,24 +71,24 @@ function NavBar() {
               </ul>
             </li>
             <li>
-              <a class="nav-link scrollto " href="/perpustakaan">
+              <a className="nav-link scrollto " href="/perpustakaan">
                 Perpustakaan
               </a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="/berita">
+              <a className="nav-link scrollto" href="/berita">
                 Berita
               </a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="#footer">
+              <a className="nav-link scrollto" href="#footer">
                 Kontak
               </a>
             </li>
-            {/* <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            {/* <li className="dropdown"><a href="#"><span>Drop Down</span> <i className="bi bi-chevron-down"></i></a>
               <ul>
                 <li><a href="#">Drop Down 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <li className="dropdown"><a href="#"><span>Deep Drop Down</span> <i className="bi bi-chevron-right"></i></a>
                   <ul>
                     <li><a href="#">Deep Drop Down 1</a></li>
                     <li><a href="#">Deep Drop Down 2</a></li>
@@ -98,20 +102,20 @@ function NavBar() {
                 <li><a href="#">Drop Down 4</a></li>
               </ul>
             </li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li> */}
+            <li><a className="nav-link scrollto" href="#contact">Contact</a></li> */}
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
+          <i className="bi bi-list mobile-nav-toggle"></i>
         </nav>
 
-        <div class="header-social-links d-flex align-items-center">
-          <a href={urlFb} class="facebook">
-            <i class="bi bi-facebook"></i>
+        <div className="header-social-links d-flex align-items-center">
+          <a href={urlFb} className="facebook">
+            <i className="bi bi-facebook"></i>
           </a>
-          <a href={urlInstagram} class="instagram">
-            <i class="bi bi-instagram"></i>
+          <a href={urlInstagram} className="instagram">
+            <i className="bi bi-instagram"></i>
           </a>
-          <a href={urlYoutube} class="youtube">
-            <i class="bi bi-youtube"></i>
+          <a href={urlYoutube} className="youtube">
+            <i className="bi bi-youtube"></i>
           </a>
         </div>
       </div>
@@ -122,7 +126,7 @@ function NavBar() {
 function Header() {
   return (
     <div className="Header">
-      <link
+      {/* <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet"
       />
@@ -149,7 +153,7 @@ function Header() {
       />
 
       <link href="assets/css/style.css" rel="stylesheet" />
-      <link href="assets/css/home.css" rel="stylesheet" />
+      <link href="assets/css/home.css" rel="stylesheet" /> */}
       <NavBar />
     </div>
   );
