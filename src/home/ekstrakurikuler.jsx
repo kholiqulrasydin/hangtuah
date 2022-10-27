@@ -35,10 +35,7 @@ class Content extends Component {
           <div className="row">
             {this.state.ekstrakurikuler.map((ekstrakurikuler) => (
               <div className="col-md-3 mb-4">
-                <div
-                  className="card"
-                  style={{ width: "18rem", height: "20rem" }}
-                >
+                <div className="card" style={{ height: "20rem" }}>
                   <img
                     src={
                       urlMedia + "/ekstrakurikuler/" + ekstrakurikuler.imgPath
