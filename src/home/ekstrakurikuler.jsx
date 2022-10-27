@@ -37,7 +37,7 @@ class Content extends Component {
               <div className="col-md-3 mb-4">
                 <div
                   className="card"
-                  style={{ width: "16rem", height: "20rem" }}
+                  style={{ width: "18rem", height: "20rem" }}
                 >
                   <img
                     src={
@@ -45,7 +45,7 @@ class Content extends Component {
                     }
                     className="card-img-top"
                     alt="..."
-                    style={{ height: "8rem" }}
+                    style={{ height: "8rem", objectFit: "cover" }}
                   ></img>
                   <div className="card-body">
                     <h5 className="card-title">

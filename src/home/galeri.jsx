@@ -41,6 +41,7 @@ class Content extends Component {
                       src={urlMedia + "/galeri/" + galeri.imgPath}
                       className="img-fluid"
                       alt=""
+                      style={{ objectFit: "cover", height: "20rem" }}
                     />
                     <a
                       href={urlMedia + "/galeri/" + galeri.imgPath}

@@ -36,7 +36,7 @@ class Content extends Component {
           </div>
           <div className="row">
             {this.state.prestasi.map((prestasi) => (
-              <div className="col-md-6">
+              <div className="col-md-6 mb-3">
                 <div className="icon-box" style={{ height: "10rem" }}>
                   <i className="bi bi-trophy-fill"></i>
                   <h4>

@@ -20,7 +20,6 @@ const Berita = ({ props }) => {
     if (berita.length > 0) return;
     axios.get(urlApi + "/berita").then((res) => {
       setBerita(res.data.data);
-      console.log(berita);
     });
   }, [berita]);
 
@@ -61,17 +60,11 @@ const Berita = ({ props }) => {
                         </p>
                         <hr />
                         <div
-                          className="card-text description"
+                          className="card-text"
                           dangerouslySetInnerHTML={{
                             __html: berita.description,
                           }}
                         ></div>
-                        <p
-                          onClick={() => changeToDetail(berita.title)}
-                          className="btn btn-primary mt-2 "
-                        >
-                          Baca Selengkapnya
-                        </p>
                       </div>
                     </div>
                     {/* <a href={`/berita/${berita.title}`}>NGENTT</a> */}
